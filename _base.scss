@@ -1,0 +1,9 @@
+@use 'variables' as color;
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: color.$color-bg;
+  }

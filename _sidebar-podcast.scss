@@ -1,0 +1,61 @@
+@use 'base';
+@use 'variables' as color;
+
+
+.sidebar-content {
+    display: grid;
+    row-gap: 50px;
+
+    .podcasts-section {
+        .section-title {
+
+        }
+        .podcasts-list {
+            display: grid;
+            row-gap: 30px;
+
+            .podcast-item {
+                background-color: color.$color-white;
+
+                .podcast-item-controls {
+                    background-color: color.$color-black;
+                    color: color.$color-white;
+                    display: grid;
+                    grid-template-columns: 70px 1fr 70px;
+                    grid-template-rows: 70px;
+
+                    .podcast-image {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                    .podcast-length {
+                        place-self: center;
+
+                        .podcast-play {
+                            background-color: white;
+                            border-bottom: 2px solid black;
+                        }
+                    }
+                    .podcast-item-content {
+                        padding: 30px;
+                        
+                        & :first-child {
+                            margin-top: 0;
+                        }
+                        & :last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    .podcast-title {
+
+                    }
+                    .podcast-date {
+
+                    }
+                }
+            }
+        }
+    }
+}

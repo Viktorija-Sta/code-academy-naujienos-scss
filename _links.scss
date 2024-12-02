@@ -1,0 +1,30 @@
+@use 'base';
+@use 'variables' as color;
+
+.event-item a {
+    color: color.$color-white;
+    text-decoration: none;
+}  
+
+.button-large {
+    background-color: color.$color-white;
+    font-size: 30px;
+    color: color.$color-black;
+    text-decoration: none;
+    padding: 30px;
+    display: block;
+    border-radius: 15px;
+    margin-top: 30px;
+  }
+
+  .news-item a {
+    text-decoration: none;
+    color: color.$color-black;
+  }
+
+  
+.secondary-news .news-item a {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    column-gap: 20px;
+  }
